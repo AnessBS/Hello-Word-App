@@ -25,10 +25,10 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t wergom/hello-word-app:${{ github.sha }} .
-        docker tag wergom/hello-word-app:${{ github.sha }} wergom/hello-word-app:latest
+        docker build -t anessbs/hello-word-app:${{ github.sha }} .
+        docker tag anessbs/hello-word-app:${{ github.sha }} anessbs/hello-word-app:latest
 
     - name: Push Docker image
       run: |
-        docker push wergom/hello-word-app:${{ github.sha }}
-        docker push wergom/hello-word-app:latest
+        docker push anessbs/hello-word-app:${{ github.sha }}
+        docker push anessbs/hello-word-app:latest
